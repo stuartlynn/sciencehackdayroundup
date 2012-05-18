@@ -1,0 +1,213 @@
+@import './mixin'
+@import './grid'
+
+redColor = #CD3E20
+backgroundColor = #474747
+
+
+.stack > *:not(.active) {
+  display: none;
+}
+
+html,body
+  font-family: Helvetica Neue
+  background-color: backgroundColor
+  width: 100% 
+  padding: 0px
+  margin: 0px
+ul 
+  list-style: none
+  padding: 0px
+  margin: 0px 
+h1,h2,h3, a
+  color : redColor
+
+a 
+  text-decoration: none
+
+#wrapper
+  background-color: transparent
+  width: 1170px
+  border-box()
+  margin: 0px auto 0px auto
+  padding: 0px
+  position:relative
+
+  header 
+    padding: 42px 85px 42px 85px 
+    border-box()
+    background-color: #F7F7F7
+    height: 125px
+    #logo
+      display: inline-block
+      vertical-align: middle
+      width: 236px
+    #navButtons
+      display: inline-block
+      vertical-align: middle
+      margin: 0px
+      margin-left: 500px
+      li
+        display: inline-block
+        a
+          color: grey
+          display: inline-block
+          margin-left: 10px
+        a.active 
+          background-color: red
+          borderRadius(5px)
+
+  #footer
+    background-color : #EBEBEB
+    height: 230px
+    margin-top: 60px
+    img
+      margin-top: 73px
+      vertical-align:middle
+      margin-left: gutter-width*3
+
+  #content 
+    border-box()
+    padding: 0px 85px 85px 85px
+    min-height: 800px
+    background-color: #F7F7F7
+    
+    .homeController
+      #homeBanner
+        width: 1170px
+        padding:0px
+        margin:0px
+        margin-left:-85px     
+        margin-bottom: 50px     
+        #homeBannerLeft
+          width: 403px
+          padding:0px
+          margin:0px
+          display: inline-block
+          vertical-align: top
+        #homeBannerRight
+          width: 763px
+          padding:0px
+          margin:0px
+          display: inline-block
+          vertical-align: top
+      ul 
+        li
+          display: inline-block
+          width: combined-width*4 - (gutter-width*2)
+          margin: 0px 0px 0px gutter-width
+          padding: 0px
+          vertical-align: top
+          p
+            font-size: 15px
+            color: grey
+          h2
+            font-size: 20px
+        li:first-child
+          margin:0px
+      #quotes
+        margin: 85px 0px
+        color : #9E9E9E
+        width : combined-width*16 
+        .quote
+          display: inline-block
+          vertical-align: top
+          width : combined-width*4
+          h2
+            color: #474747
+            font-weight: 200
+            font-size: 32px
+          
+          .quote
+            img
+              display: inline-block
+              vertical-align: top
+              margin-right: 8px
+            p
+              font-style: italic
+              display: inline-block
+              vertical-align: top
+      #hacks
+        width: 100%
+        margin: 0px
+        padding: 0px
+        h2
+          color: #474747
+          font-size: 32px
+          font-weight: 200
+      
+        li
+          border-box()
+          padding: 20px
+          margin: 20px 20px 0px 0px
+          width: 300px
+          background-color: #EBEBEB
+          display: inline-block
+          vertical-align: top
+          .hackDetails
+            display: inline-block
+            vertical-align: top
+            p.teamSmall
+              color: #9E9E9E
+              height: 10px
+              ellipsis()
+              font-size: 10px
+              margin: 0px 0px 15px 0px
+              padding: 0px
+            h3
+              color: #6E6D6D
+              height: 23px
+              font-size: 20px
+              margin: 0px 
+              padding: 0px
+              width: 100px
+              font-weight: 500
+            a
+              color: #6E6D6D
+          img 
+            width: 80px
+            height: 80px
+            display: inline-block
+            vertical-align: top
+            margin-right: 20px
+  #hacksFull
+    .hackShow
+      background-color: #F7F7F7
+      margin-top: 40px
+      box-shadow(2px, 2px, 2px, 2px, rgba(0,0,0,0.2))
+      .hackBanner
+        width: 1170px
+        padding:0px
+        margin:0px
+        margin-bottom: 50px     
+        #hackMainImage
+          width: 1170px
+
+      .hackTeam
+        display: inline-block
+        vertical-align: top
+        margin-left: 85px
+        ul 
+          margin-top: 20px
+          margin-bottom: 35px
+          li
+            font-size: 15px
+            line-height: 18px
+            color : #898989
+            margin-bottom: 12px
+          a
+            color : #898989
+      .hackDetails 
+        width: combined-width*8
+        margin-left: combined-width
+        display: inline-block
+        vertical-align: top
+        margin-bottom: 85px
+        h1
+          font-weight: 200
+          color: grey
+        p
+          color: grey
+          font-size: 13px
+
+          

@@ -1,0 +1,11 @@
+<h2>The Hacks</h2>
+<ul>
+  <% for hack in @ : %>
+    <li>
+      <img src="<%=hack.thumb%>" />
+      <div class='hackDetails'>
+        <h3> <a class='nav' href='#<%=hack.slug()%>'> <%=hack.name%></a></h3>
+      </div>
+    </li>
+  <%end%>
+</ul>

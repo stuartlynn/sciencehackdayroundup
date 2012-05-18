@@ -1,0 +1,9 @@
+<div id="logo">
+  <img class='shdchi' src='/images/logo.png'></img>
+</div>
+
+<ul id="navButtons">
+  <li><a class='nav' href='#headers'>About</a></li>
+  <li><a class='nav' href='#hacks'>Hacks</a></li>
+  <li><a class='nav' href='#footer'>Sponsors</a></li>
+</ul>

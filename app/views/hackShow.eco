@@ -1,0 +1,33 @@
+<div class='hackBanner'>
+  <img class="hackMainImage" src='<%=@mainImage%>'/>
+</div>
+
+
+<div class='hackTeam'>
+  <h2>Team</h2>
+  <ul>
+    <% for member in @creators : %>
+      <li>
+        <%=member%>
+      </li>
+    <%end%>
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <% if @sourceCode != "" : %>
+      <li> <a href='<%=@sourceCode%>'> Source Code</a> </li>
+    <%end%>
+    <% if @url !="" : %>
+      <li> <a href='<%=@url%>'>Project Page</a> </li>
+    <%end%>
+
+  </ul>
+</div>
+
+
+<div class='hackDetails'>
+  <h2>Hack</h2>
+  <h1><%=@name%></h1>
+  <p><%-@about%></p>
+</div>

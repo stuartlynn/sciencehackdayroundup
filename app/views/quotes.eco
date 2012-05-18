@@ -1,0 +1,9 @@
+<h2>Quotes</h2>
+
+<% for quote in @ : %>
+  <div class='quote'>
+    <img src='/images/quote.png' />
+    <p> <%=quote.quote%></p>
+    <p> <%=quote.person%></p>
+  </div>
+<%end%>

@@ -1,0 +1,32 @@
+<div id='homeBanner'>
+  <img id="homeBannerLeft" src='/images/homeSmall.png' />
+  <img id="homeBannerRight" src='/images/homeLarge.png'/>
+</div>
+
+<ul id="headers">
+  <li> 
+    <h2> The Experience </h2> 
+    <p>
+      Science Hack Day Chicago took place on 12-13 May, 2012, at the Adler Planetarium. Software developers, designers, artists, scientists, and educators came together to creative awesome things.
+    </p>
+  </li>
+
+  <li> 
+    <h2> The Stories </h2> 
+    <p>
+      Participants in Science Hack Day Chicago came from as far as Oxford, UK, and frottm all backgrounds. Designers worked with teachers; software developers with electrical engineers. Collaboration was key.
+    </p>
+  </li>
+
+  <li>
+    <h2> The Science</h2>
+    <p>
+      After 27 hours, completed hacks ranged from mind-reading video games, to galaxy karaoke, to command-line controlled cars, to a children’s book about misconceptions in cosmology.
+    </p>
+  </li>
+
+</ul>
+
+<div id="quotes"></div>
+<div id="hacks"></div>
+
